@@ -1,0 +1,40 @@
+.destination {
+    @apply px-8 py-44;
+    .popular {
+        @apply w-full h-full mb-10 relative;
+        h1 {
+            @apply text-6xl relative font-[Playfair];
+            &:after {
+                @apply content-[''] absolute w-96 h-1 bg-[#FF7757] rounded left-0 -bottom-5;
+            }
+        }
+        p {
+            @apply text-[#767E86] text-lg mt-10;
+        }
+        svg {
+            @apply absolute right-32 bottom-0 hover:scale-105 text-white;
+        }
+    }
+    .carousel {
+        @apply relative;
+        .upG {
+            @apply flex relative flex-row overflow-x-scroll whitespace-nowrap scroll-smooth;
+
+            .group {
+                @apply min-w-[300px] min-h-[500px] relative;
+                .tBlock {
+                    @apply absolute font-[Playfair] z-[1] bottom-3 left-3;
+                    h1 {
+                        @apply text-white text-3xl;
+                    }
+                    p {
+                        @apply text-white text-xl flex items-center;
+                    }
+                }
+                img {
+                    @apply px-2 hover:scale-105 transition-all duration-300 ease-in-out blur-[1px] brightness-75 hover:blur-0;
+                }
+            }
+        }
+    }
+}

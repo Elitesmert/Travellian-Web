@@ -1,0 +1,40 @@
+.blog {
+    @apply w-full h-full relative;
+    .tittle {
+        @apply px-48;
+        h1 {
+            @apply text-6xl relative font-[Playfair];
+            &:after {
+                @apply content-[''] absolute w-36 h-1 bg-[#FF7757] rounded left-0 -bottom-5;
+            }
+        }
+        p {
+            @apply text-[#767E86] text-lg mt-10;
+        }
+    }
+    .main {
+        @apply px-48 pt-28 pb-36 flex;
+        button {
+            @apply flex items-center justify-center gap-2 text-[#FF7757];
+            svg {
+                @apply w-7 h-7;
+            }
+        }
+        .mainL{
+
+            @apply min-w-[500px] relative ;
+            img{
+                @apply w-full h-full rounded-[26px];
+            }
+        }
+        .mainR{
+            @apply flex flex-col ml-8 my-28 gap-10 items-start;
+            h1{
+                @apply text-5xl font-[Playfair];
+            }
+            p{
+                @apply text-lg leading-9;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Playfair";
+    src: url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+}
+
+.hero {
+    @apply h-[1000px] w-full relative;
+    img {
+        @apply h-full w-full brightness-75;
+    }
+}
+.title {
+    @apply absolute top-64 text-white pl-44;
+    h1 {
+        @apply text-5xl mb-4;
+    }
+}
+.search {
+    @apply bg-white  rounded-tr-[20px] rounded-br-[20px] absolute bottom-72 flex;
+    .searchL {
+        @apply text-[#767E86] flex gap-5 p-10;
+        .inputs {
+            @apply flex flex-col;
+            input {
+                @apply border-b-2 border-black;
+            }
+        }
+    }
+    .searchR {
+        div {
+            @apply bg-[#FF7757] h-full flex justify-center items-center w-[170px] rounded-tr-[20px] rounded-br-[20px] font-[Playfair];
+            p {
+                @apply text-white ml-5 text-4xl;
+            }
+            svg {
+                @apply text-7xl mr-2.5 text-white;
+            }
+        }
+    }
+}

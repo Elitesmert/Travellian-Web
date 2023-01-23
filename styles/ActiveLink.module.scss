@@ -1,0 +1,9 @@
+.link {
+    .active {
+        @apply pb-[4px] transition-all duration-300;
+
+        &::after {
+            @apply content-[''] absolute bottom-0 left-0 w-full h-1 bg-[#FF7757] scale-100 rounded;
+        }
+    }
+}
